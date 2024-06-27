@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replit</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <style type="text/css">
+        #jindo1 {
+            width: 400px;
+            height: 300px;
+            border: 1px solid black;
+            border-radius: 25%;
+            margin: 10px;
+        }
+        #jindo2 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 50%;
+            margin: 10px;
+        }
+        #bimg {
+            width: 800px;
+            height: 300px;
+            border: url('./jindo2.jpg');
+            margin: 10px;
+            background-image: url('./jindo2.jpg');
+            background-size: cover;
+        }
+        #jindo2 {
+            width: 800px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 10px;
+            box-shadow: 1px 1px 5px 5px #888888;
+        }
+    </style>
+
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <img src="./jindo1.png" alt="진돗개1" id="jindo1">
+    <img src="./jindo2.png" alt="진돗개2" id="jindo2">
+    <center>
+    <p>
+        이미지 하나 출력
+    </p>
+
+    <div id="bimg"></div>
+
+    <br>
+    <!-- div#hover>a>img[src='./jindo.png'] -->
+    <div id="hover">
+        <a href="#">
+            <img src="./jindo2.jpg" alt="진돗개" id="jindo2">
+        </a>
+    </div>
+    </center>
+</body>
+</html>
