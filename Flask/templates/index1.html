@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="add_user.hmtl~"><button>Add User</button></a>
+    <ul>
+        {% for user in users %}
+            <li>
+                {{ user.name }} ({{ user.email }})
+                <a href="edit_user.html~">Edit</a>
+                <!-- 사용자 정보를 삭제하는 페이지 이동, 특정 사용자 ID를 가지고 이동 -->
+                <a href="delete_user.html~">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
